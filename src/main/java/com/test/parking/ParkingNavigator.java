@@ -28,8 +28,6 @@ public class ParkingNavigator {
 	public Position startParking(int posX, int posY, String direction) throws ParkingNavigatorException {
 		LOGGER.log(Level.INFO, "Entering startParking method");
 		checkNavigationDirection(direction);
-
-		direction = direction.toUpperCase();
 		Car car = new Car(posX, posY);
 
 		char[] chars = direction.toCharArray();
